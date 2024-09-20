@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Kaden's Weather App </title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="weather-grid.css">
+        <link rel="stylesheet" href="general.css">
+
+    </head>
+
+    
+
+    <body>
+        <style>
+            body {
+                background: rgba(0, 0, 0, .65) url(background2.JPG);
+                background-blend-mode: darken;
+                background-size: cover;
+            }
+        </style>
+        <div class = "header">
+            <div class = "left-section">
+                Kaden's Weather App
+            </div>
+            <div class = "right-section"> 
+                Settings
+            </div>
+        </div>
+
+        <div id = "weatherGrid" class = "weather-grid">
+            <div id = "weatherTemplate" class = "weather-square" style ="display: none;">
+                <div class = "now-forecast">
+                    <div class = "upper-now-forecast">
+                        <div class = "location">
+                            Providence
+                        </div>
+                        <div class = "weather-icon">
+                            S
+                        </div>
+                    </div>
+                    <div class = "lower-now-forecast">
+                        <div class = "now-temperature"> 
+                            77 
+                        </div>
+                        <div class = "today"> 
+                            <div class = weather-word>
+                                Cloudy
+                            </div>
+                            <div class = "high-low">
+                                H: 80 L: 57
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+
+                <div class = "hourly-forecast">
+                    <div class = "later-forecast">
+                        <div class = 'one-hr-time'>
+                            9
+                        </div>
+                        <div class = "one-hr-icon">
+                            S
+                        </div>
+                        <div class = "one-hr-degree">
+                            69
+                        </div>
+                    </div>
+                    <div class = "later-forecast">
+                        <div class = "two-hr-time">
+                            10
+                        </div>
+                        <div class = "two-hr-icon">
+                            S
+                        </div>
+                        <div class = "two-hr-degree">
+                            69
+                        </div>
+                    </div>
+                    <div class = "later-forecast"> 
+                        <div class = "three-hr-time">
+                            11
+                        </div>
+                        <div class = "three-hr-icon">
+                            S
+                        </div>
+                        <div class = "three-hr-degree">
+                            69
+                        </div>
+                    </div>
+                    <!-- <div class = "later-forecast">
+                        <div class = "four-hr-time">
+                            12
+                        </div>
+                        <div class = "four-hr-icon">
+                            S
+                        </div>
+                        <div class = "four-hr-degree">
+                            69
+                        </div>
+                    </div>
+                    <div class = "later-forecast">
+                        <div class = "five-hr-time">
+                            1
+                        </div>
+                        <div class = "five-hr-icon">
+                            S
+                        </div>
+                        <div class = "five-hr-degree">
+                            69
+                        </div>
+                    </div>
+                    <div class = "later-forecast">
+                        <div class = "six-hr-time">
+                            2
+                        </div>
+                        <div class = "six-hr-icon">
+                            S
+                        </div>
+                        <div class = "six-hr-degree">
+                            69
+                        </div> 
+                    </div> -->
+    
+                </div>
+    
+                <div class = "daily-forecast">
+                    <div class = "next-days">
+                        <div class = "one-day"> Thu </div>
+                        <div class = "two-day"> Fri </div>
+                        <div class = "three-day"> Sat </div>
+                        <div class = "four-day"> Sun </div>
+                        <div class = "five-day"> Mon </div>
+                    </div>
+                    <div class = "next-forecasts">
+                        <div class = "one-forecast">
+                            S
+                        </div>
+                        <div class = "two-forecast">
+                            S
+                        </div>
+                        <div class = "three-forecast">
+                            S
+                        </div>
+                        <div class = "four-forecast">
+                            S
+                        </div>
+                        <div class = "five-forecast">
+                            S
+                        </div>
+                    </div>
+                    <div class = "next-lows">
+                        <div class = one-low> 62 </div>
+                        <div class = two-low> 62 </div>
+                        <div class = three-low> 62 </div>
+                        <div class = four-low> 62 </div>
+                        <div class = five-low> 62 </div>
+                    </div>
+                    <div class = "next-ranges">
+                        <div class = one-range> --------------- </div>
+                        <div class = two-range> --------------- </div>
+                        <div class = three-range> --------------- </div>
+                        <div class = four-range> --------------- </div>
+                        <div class = five-range> --------------- </div>
+                    </div>
+                    <div class = "next-highs">
+                        <div class = one-high> 70 </div>
+                        <div class = two-high> 70 </div>
+                        <div class = three-high> 70 </div>
+                        <div class = four-high> 70 </div>
+                        <div class = five-high> 70 </div>
+                    </div>
+                </div>
+    
+            </div>
+
+            <div id = 'add' class = add-square>
+                <div id = "addImg" class = "add-img">
+                    <img src="Plus-Symbol-Transparent-Images.png">
+                </div>
+                <input type = "text" class = "cityInput" placeholder="Enter city">
+
+            </div>                        
+            <script src="add-square.js"></script>
+        </div>
+    </body>
+</html>

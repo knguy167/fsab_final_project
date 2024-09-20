@@ -1,0 +1,117 @@
+.weather-grid {
+    font-family: Quicksand, Arial;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 100px;
+    justify-items: center;
+}
+
+.add-square {
+    display: grid;
+    grid-template-rows: 200px 100px;
+
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.location {
+    font-size: 20px;
+}
+
+.weather-icon {
+    font-size: 20px;
+}
+
+.weather-square {
+    width: 300px;
+    height: 300px;
+    display: grid; 
+    grid-template-rows: 80px 80px 140px;
+    padding: 10px;
+
+    background-image: url(prov.jpg);
+    background-size: cover;
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: darken;
+
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.now-forecast {
+    display: grid;
+}
+
+.upper-now-forecast {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lower-now-forecast {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-word {
+    text-align: right;
+}
+
+.now-temperature {
+    font-size: 32px;
+}
+
+.hourly-forecast {
+    display: grid; 
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 14px;
+}
+
+.later-forecast {
+    display: grid;
+    grid-template-rows: 24px 32px 24px;
+    text-align: center;
+}
+
+
+
+
+
+.daily-forecast {
+    display: grid;
+    grid-template-columns: 50px 80px 35px 100px 35px;
+}
+
+.next-days, .next-forecasts, .next-lows, .next-highs, .next-ranges {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.next-days {
+    justify-content: left;
+    
+    
+}
+
+.add-img {
+    border: 1px solid;
+    width: 20vh;
+    height: 20vh;
+    overflow: hidden;
+    display: flex;
+    border: transparent;
+}
+
+add-img:hover {
+    background-color: yellow;
+    color: green;
+}
